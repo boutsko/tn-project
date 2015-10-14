@@ -8,8 +8,10 @@ app.controller('MountsController', function($scope){
         {title: "Монблан", alt: 4810}
     ];
 
+    $scope.newMount = {title: null, alt: null};
+    
     $scope.addMount = function(){
-        $scope.mounts.push({title: "Монте Роза", alt: 4634})
+        $scope.mounts.push($scope.newMount)
     };
 });
 

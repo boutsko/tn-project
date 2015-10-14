@@ -8,6 +8,14 @@
   </head>
   <body style="padding: 100px;" ng-controller="MountsController">
     <h1>{{title}}</h1>
+    <form>
+      <div class="form-group">
+        <label>Название</label>
+        <input class="form-control" type="text" ng-model="newMount.title" />
+      </div>
+        <label>Высота</label>
+        <input class="form-control" type="text" ng-model="newMount.alt" />
+      </div>
     <button ng-click="addMount()" class="btn btn-primary">Добавить Вершину</button>
     <table class="table">
       <tr>
