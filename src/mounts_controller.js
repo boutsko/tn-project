@@ -11,7 +11,7 @@ app.controller('MountsController', function($scope){
     $scope.newMount = {title: null, alt: null};
     
     $scope.addMount = function(){
-        $scope.mounts.push($scope.newMount)
+        $scope.mounts.push(angular.copy($scope.newMount))
     };
 });
 
