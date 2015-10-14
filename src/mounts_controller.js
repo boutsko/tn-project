@@ -7,5 +7,9 @@ app.controller('MountsController', function($scope){
         {title: "Маттерхорн", alt: 4478},
         {title: "Монблан", alt: 4810}
     ];
+
+    $scope.addMount = function(){
+        $scope.mounts.push({title: "Монте Роза", alt: 4634})
+    };
 });
 
