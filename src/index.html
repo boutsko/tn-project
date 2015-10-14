@@ -13,13 +13,9 @@
         <th>Вершина</th>
         <th>Высота</th>
       </tr>
-      <tr>
-        <td>Монблан</td>
-        <td>4810</td>
-      </tr>
-      <tr>
-        <td>Маттерхорн</td>
-        <td>4478</td>
+      <tr ng-repeat="mount in mounts">
+        <td>{{mount.title}}</td>
+        <td>{{mount.alt}}</td>
       </tr>
       <script src="mounts_controller.js" type="text/javascript"></script>
   </body>
